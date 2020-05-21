@@ -31,7 +31,7 @@ main() {
     remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
     remote_branch=$PAGES_BRANCH
 
-    echo "Using brewblog $version"
+    echo "Using $version"
 
     echo "Building in $BUILD_DIR directory"
     cd $BUILD_DIR
