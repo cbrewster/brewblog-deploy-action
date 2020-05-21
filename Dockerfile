@@ -1,6 +1,4 @@
-FROM rust:1.43-slim
-
-RUN cargo install brewblog
+FROM brewblog:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
