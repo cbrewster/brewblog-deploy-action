@@ -1,4 +1,4 @@
-FROM brewblog:latest
+FROM cbrewster/brewblog:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
