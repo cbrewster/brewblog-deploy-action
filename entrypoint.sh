@@ -38,6 +38,11 @@ main() {
     
     echo Building
     brewblog build
+    
+    if [[ -n "$CNAME" ]]; then
+        echo "Setting CNAME $CNAME"
+        echo $CNAME > CNAME
+    fi
 
     echo "Pushing artifacts to ${GITHUB_REPOSITORY}:$remote_branch"
 
