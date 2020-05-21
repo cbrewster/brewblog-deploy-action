@@ -39,14 +39,15 @@ main() {
     echo Building
     brewblog build
     
+    cd public
+
     if [[ -n "$CNAME" ]]; then
         echo "Setting CNAME $CNAME"
-        echo $CNAME > public/CNAME
+        echo $CNAME > CNAME
     fi
 
     echo "Pushing artifacts to ${GITHUB_REPOSITORY}:$remote_branch"
 
-    cd public
     git init
     git config user.name "GitHub Actions"
     git config user.email "github-actions-bot@users.noreply.github.com"
