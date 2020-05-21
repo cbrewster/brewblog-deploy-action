@@ -1,4 +1,4 @@
-FROM rust:1-alpine3.11
+FROM rust:1.43-slim
 
 RUN cargo install brewblog
 
