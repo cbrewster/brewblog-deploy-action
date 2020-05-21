@@ -1,6 +1,0 @@
-name: "Brewblog Deploy Action"
-description: "Deploys brewblog to GitHub pages"
-author: "Connor Brewster"
-runs:
-  using: "docker"
-  image: "Dockerfile"

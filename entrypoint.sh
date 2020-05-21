@@ -41,7 +41,7 @@ main() {
     
     if [[ -n "$CNAME" ]]; then
         echo "Setting CNAME $CNAME"
-        echo $CNAME > CNAME
+        echo $CNAME > public/CNAME
     fi
 
     echo "Pushing artifacts to ${GITHUB_REPOSITORY}:$remote_branch"
