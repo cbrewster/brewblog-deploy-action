@@ -35,7 +35,6 @@ main() {
 
     echo "Building in $BUILD_DIR directory"
     cd $BUILD_DIR
-    ls .
     
     echo Building
     brewblog build
